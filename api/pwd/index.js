@@ -1,4 +1,5 @@
 module.exports = async (req, res) => {
     const { body } = req
-    res.end(`Hello ${JSON.stringify(req)}, from pwd`)
+    let msg = JSON.stringify(req);
+    res.send(msg)
   }
